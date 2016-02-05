@@ -1,0 +1,21 @@
+int line = 10;
+void setup() {
+  
+  size(500, 500);
+  noStroke();
+  background(0);
+  frameRate(10);
+}
+
+void draw() {
+  if (line < width) {   
+    fill(0); 
+    rect(line, 0, 3, height); 
+    fill(255);
+    rect(line, mouseY, 3, height); 
+    line += 10; 
+    
+  } else {
+    line = 10; 
+  }
+}
