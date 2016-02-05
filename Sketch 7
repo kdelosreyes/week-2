@@ -1,0 +1,19 @@
+void setup(){
+background (100);
+size (500, 500);
+noStroke();
+fill(255,255,255);
+} 
+
+void draw(){
+  int gridx=20; 
+for (gridx=20; gridx<480; gridx++){
+  rect (gridx,20, 5, 455);
+  gridx=gridx+17;
+}
+int gridy=20;
+for (gridy=20; gridy<480; gridy++){
+  rect (20,gridy, 455, 5);
+  gridy=gridy+17;
+}
+}
