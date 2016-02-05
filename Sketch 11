@@ -1,0 +1,19 @@
+int line = 15;
+void setup() {
+  
+  size(500,500);
+  noStroke();
+  background(0);
+  frameRate(10);
+}
+
+void draw() {
+  while(line < width) {
+    fill(0);
+    rect(line, 0, 3, height);
+    fill(255);
+    rect(line, random(height), 3, height);
+    line += 15;
+  }
+    line = 15;
+  }
